@@ -1,0 +1,22 @@
+.btnMenu {
+    display: block;
+    height: 30px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-size: 30px;
+    background-position: 15px;
+    text-indent: -9999px;
+}
+
+
+.btnMenu_open {
+    background-image: url("hamburguer_black.png");
+    background-color: #bdc3c7;
+}
+
+.btnMenu_close {
+    background-color: #2ecc71;
+    background-image: url("hamburguer_white.png");
+}

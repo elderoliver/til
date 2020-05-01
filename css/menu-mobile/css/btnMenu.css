@@ -10,13 +10,12 @@
     text-indent: -9999px;
 }
 
-
 .btnMenu_open {
-    background-image: url("hamburguer_black.png");
+    background-image: url("../img/hamburguer_black.png");
     background-color: #bdc3c7;
 }
 
 .btnMenu_close {
     background-color: #2ecc71;
-    background-image: url("hamburguer_white.png");
+    background-image: url("../img/hamburguer_white.png");
 }

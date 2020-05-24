@@ -94,8 +94,8 @@ footer {
 }
 
 main {
-    width: 940px; 
-    margin: 0 auto; 
+    /* width: 940px; 
+    margin: 0 auto;  */
 }
 
 /* Aplicado somente aos filhos diretos */
@@ -179,7 +179,7 @@ td,th {
 .titulo-principal {
     text-align: center;
     font-size: 2em;
-    margin: 0 0 1em; 
+    margin: 1em 0 1em; 
     clear: left; 
     color: rgba(0,0,0,1);
     /*    */
@@ -188,6 +188,11 @@ td,th {
 
 .titulo-principal::first-letter {
     font-weight: bold;
+}
+
+.principal,.mapa {
+    width: 940px; 
+    margin: 0 auto; 
 }
 
 .principal p {
@@ -266,7 +271,7 @@ td,th {
 
 @media screen and (max-width: 480px){
     
-    .caixa,main,.conteudo-beneficios,.beneficios,.video {
+    .caixa,.principal,.mapa,.conteudo-beneficios,.beneficios,.video {
         width: auto;
     }    
 

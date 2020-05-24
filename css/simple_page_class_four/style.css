@@ -98,6 +98,25 @@ main {
     margin: 0 auto; 
 }
 
+/* Aplicado somente aos filhos diretos */
+/* main > p {
+    background: red;
+} */
+
+/* Todo p seguido de uma imagem  */
+/* img + p {
+    background: blue;
+} */
+
+/* Todos os p(s) seguido de uma imagem */ 
+/* img ~ p {
+    background: yellow;
+} */
+
+/* .principal p:not(#missao) {
+    background: orange;
+} */
+
 form{
     margin: 40px 0; 
 }
@@ -162,6 +181,9 @@ td,th {
     font-size: 2em;
     margin: 0 0 1em; 
     clear: left; 
+    color: rgba(0,0,0,1);
+    /*    */
+    /* text-shadow: 2px 2px #FF0000; */
 }
 
 .titulo-principal::first-letter {
@@ -182,10 +204,19 @@ td,th {
 
 .beneficios {
     padding: 3em 0;
+    background: #888888;
+    /* borda interna "inset" */
 }
 
 .imagem-beneficios {
     width: 60%; 
+    box-shadow: 10px 10px 10px #000;
+    /* opacity: 1; */
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.7;
+    /* transition: 5s; */
 }
 
 .conteudo-beneficios {
@@ -197,6 +228,7 @@ td,th {
     width: 40%;
     display: inline-block;
     vertical-align: top;
+    
 }
 
 .utensilios {
@@ -229,6 +261,27 @@ td,th {
 
 .itens:first-child {
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 480px){
+    
+    .caixa,main,.conteudo-beneficios,.beneficios,.video {
+        width: auto;
+    }    
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios,.imagem-beneficios {
+        width: 100%; 
+    }
+
 }
 
 

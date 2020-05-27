@@ -1,16 +1,16 @@
-.secao{
-  float: left;
-  width: 33%;
-}
 .mini{
   float: left;
   width: 50%;
 }
 
-
 /* Passo do exercicio.  */
 header {
   padding: 0.5em 0; 
+}
+
+.secao{
+	float: left;
+	width: 100%;
 }
 
 .destaques {
@@ -42,3 +42,27 @@ img {
 .menu-principal li {
 	float: left; 
 }
+
+@media (min-width: 600px) {
+	html {
+		font-size: 1.125em;
+	}
+
+	.secao {
+		width: 50%; 
+	}
+}
+
+@media (min-width: 1000px) {
+	html {
+		font-size: 1.25em;
+	}
+
+	.secao {
+		width: 33.333%; 
+	}
+}
+
+
+
+
